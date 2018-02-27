@@ -1,0 +1,40 @@
+<div class="fb-edit-profile fb-edit-profile-form">
+  <h3 class="fb-edit-profile-form-item">Edit Profile</h3>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <input matInput type="text" placeholder="First Name" [(ngModel)]="firstName"/>
+    <button mat-button *ngIf="firstName" matSuffix mat-icon-button aria-label="Clear" (click)="firstName=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <input matInput type="text" placeholder="Last Name" [(ngModel)]="lastName"/>
+    <button mat-button *ngIf="lastName" matSuffix mat-icon-button aria-label="Clear" (click)="lastName=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <input matInput type="text" placeholder="City, State" [(ngModel)]="cityState"/>
+    <button mat-button *ngIf="cityState" matSuffix mat-icon-button aria-label="Clear" (click)="cityState=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <textarea matInput placeholder="Interests" [(ngModel)]="interests"></textarea>
+    <button mat-button *ngIf="interests" matSuffix mat-icon-button aria-label="Clear" (click)="interests=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <textarea matInput placeholder="Favorite Music" [(ngModel)]="favMusic"></textarea>
+    <button mat-button *ngIf="favMusic" matSuffix mat-icon-button aria-label="Clear" (click)="favMusic=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field class="fb-edit-profile-form-item">
+    <textarea matInput placeholder="Favorite Movies" [(ngModel)]="favMovies"></textarea>
+    <button mat-button *ngIf="favMovies" matSuffix mat-icon-button aria-label="Clear" (click)="favMovies=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <button class="fb-edit-profile-form-item" color="primary" routerLink="/profile" mat-raised-button aria-label="Save Changes" (click)="doFormSave()">Save Changes</button>
+</div>

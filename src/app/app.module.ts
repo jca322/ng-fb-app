@@ -12,12 +12,14 @@ import { NavComponent } from './components/shared/nav/nav.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'create-account', component: CreateAccountComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'edit-profile', component: EditProfileComponent }
   // { path: '/home', component: }
 ];
 
@@ -27,7 +29,8 @@ const routes: Routes = [
     NavComponent,
     LoginComponent,
     CreateAccountComponent,
-    ProfileComponent
+    ProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
