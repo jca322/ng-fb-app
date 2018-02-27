@@ -1,19 +1,22 @@
 <mat-toolbar color="primary" class="fb-nav">
   <span class="fb-nav-title">Mock FB</span>
-  <span class="fb-nav-search fb-nav-item">
-    <input type="text" class="form-control" placeholder="Search">
-    <button class="fb-nav-search-btn"(click)="doSearch()">Search</button>
-  </span>
-  <span class="fb-nav-item">
-    <a routerLink="#">Pending Friend Requests</a>
-  </span>
-  <span class="fb-nav-item">
-    <a routerLink="#">Pokes</a>
-  </span>
-  <span class="fb-nav-item">
-    <a routerLink="#">My Profile</a>
-  </span>
-  <span class="fb-nav-item">
-    <a href="#">Logout</a>
-  </span>
+  <div class="pull-right fb-nav-items">
+    <mat-form-field class="fb-nav-search fb-nav-item">
+      <input color="accent" type="text" matInput placeholder="Search">
+      <button mat-button class="fb-nav-search-btn" (click)="doSearch()">Search</button>
+    </mat-form-field>
+
+    <span class="fb-nav-item">
+      <button mat-button routerLink="#">Pending Friend Requests</button>
+    </span>
+    <span class="fb-nav-item">
+      <button mat-button routerLink="#">Pokes</button>
+    </span>
+    <span class="fb-nav-item">
+      <button mat-button routerLink="/profile">My Profile</button>
+    </span>
+    <span class="fb-nav-item">
+      <button mat-button href="#">Logout</button>
+    </span>
+  </div>
 </mat-toolbar>
