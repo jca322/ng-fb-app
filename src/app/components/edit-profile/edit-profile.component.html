@@ -1,4 +1,4 @@
-<div class="fb-edit-profile fb-edit-profile-form">
+<mat-card class="fb-edit-profile fb-edit-profile-form">
   <h3 class="fb-edit-profile-form-item">Edit Profile</h3>
   <mat-form-field class="fb-edit-profile-form-item">
     <input matInput type="text" placeholder="First Name" [(ngModel)]="firstName"/>
@@ -36,5 +36,8 @@
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>
-  <button class="fb-edit-profile-form-item" color="primary" routerLink="/profile" mat-raised-button aria-label="Save Changes" (click)="doFormSave()">Save Changes</button>
-</div>
+  <div class="fb-edit-profile-btn-row">
+    <button class="fb-edit-profile-form-btn" color="primary" mat-raised-button aria-label="Save Changes" (click)="doFormSave()">Save Changes</button>
+    <button class="fb-edit-profile-form-btn" color="warn" routerLink="/profile" mat-raised-button aria-label="Cancel">Cancel</button>
+  </div>
+</mat-card>

@@ -1,4 +1,4 @@
-<div class="fb-login fb-login-form">
+<mat-card class="fb-login fb-login-form">
   <h3 class="fb-login-form-item">Login</h3>
   <mat-form-field class="fb-login-form-item">
     <input matInput type="text" placeholder="Username" [(ngModel)]="username"/>
@@ -12,11 +12,11 @@
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>
-  <button class="fb-login-form-item" mat-raised-button aria-label="Login" routerLink="/profile">Login</button>
+  <button class="fb-login-form-item" color="primary" mat-raised-button aria-label="Login" routerLink="/profile">Login</button>
   <p class="fb-login-form-item">Don't have an account yet? 
     <button mat-raised-button color="accent" aria-label="Create Account" routerLink="/create-account">Create an Account</button>
   </p>
-</div>
+</mat-card>
 
 
 

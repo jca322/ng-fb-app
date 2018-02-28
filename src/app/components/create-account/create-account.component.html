@@ -1,4 +1,4 @@
-<div class="fb-create-account fb-create-account-form">
+<mat-card class="fb-create-account fb-create-account-form">
   <h3 class="fb-create-account-form-item">Create an Account</h3>
   <mat-form-field class="fb-create-account-form-item">
     <input matInput type="text" placeholder="First Name" [(ngModel)]="firstName"/>
@@ -31,4 +31,4 @@
     </button>
   </mat-form-field>
   <button class="fb-create-account-form-item" color="primary" routerLink="/profile" mat-raised-button aria-label="Create Account" (click)="doFormSubmit()">Create Account</button>
-</div>
+</mat-card>
